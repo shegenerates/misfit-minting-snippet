@@ -1,8 +1,45 @@
-<button id="misfit-minter-button" class="misfit-btn">Mint a misfit</button>
+
+<div class="btndiv">
+  <button id="misfit-minter-button" class="btnpop">Mint a misfit</button>
+</div>
 
 <style>
-  .misfit-btn{
-  }
+.btndiv {
+ height:100px; 
+ margin-top:10px;
+ margin-bottom:10px;
+}
+
+.btnpop {
+ background: #3777c4; 
+ position: relative; 
+ padding: 20px 40px;
+ border-top: 0px; 
+ border-left: 0px; 
+ border-right: 0px;
+ border-bottom: 10px solid #265388;
+ color: white; font-size: 40px; 
+ font-family: Lucida Sans Unicode, sans-serif; 
+ vertical-align: middle; 
+ -webkit-border-radius: 15px; 
+ -moz-border-radius: 15px; 
+ border-radius: 15px; 
+ -webkit-box-shadow:0px 1px 15px 1px #999999;
+ box-shadow:0px 1px 15px 1px #999999;
+  transition: all 0.1s;
+}
+.btnpop:hover { 
+  top: -1px; 
+  border-bottom: 12px solid #265388; 
+  background: #4984cc;
+}
+.btnpop:active { 
+  top: 8px; 
+  border-bottom: 2px solid #265388;
+  background: #4984cc; 
+  -webkit-box-shadow:none;
+  box-shadow:none;
+}
 </style>
 
 <script src="https://cdn.ethers.io/lib/ethers-5.1.umd.min.js" type="text/javascript">
